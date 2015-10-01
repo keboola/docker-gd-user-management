@@ -1,12 +1,10 @@
 # VERSION 1.0
-FROM keboola/base
+FROM bizztreat/docker-ruby-keboola
 MAINTAINER Jiri Tobolka (jiri.tobolka@bizztreat.com)
 
 WORKDIR /home
 
-# Initialize
-RUN $ sudo yum install ruby
- 
+# Initialize 
 RUN git clone https://github.com/jiritobolka/gd-user-management.git ./
 RUN git checkout master
 
