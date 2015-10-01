@@ -1,2 +1,2 @@
 # docker-gd-user-management
-Docker files for GD user management
+Docker files for GoodData user management
