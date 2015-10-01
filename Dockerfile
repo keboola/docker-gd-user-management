@@ -4,7 +4,8 @@ MAINTAINER Jiri Tobolka (jiri.tobolka@bizztreat.com)
 
 WORKDIR /home
 
-# Initialize 
+# Initialize
+RUN yum install ruby 
 RUN git clone https://github.com/jiritobolka/gd-user-management.git ./
 RUN git checkout master
 
