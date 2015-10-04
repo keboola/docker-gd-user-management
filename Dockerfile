@@ -2,7 +2,7 @@
 FROM bizztreat/docker-ruby-keboola
 MAINTAINER Jiri Tobolka (jiri.tobolka@bizztreat.com)
 
-WORKDIR /home
+WORKDIR /
 
 # Initialize 
 RUN git clone https://github.com/jiritobolka/gd-user-management.git ./
