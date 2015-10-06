@@ -8,4 +8,4 @@ WORKDIR /home
 RUN git clone https://github.com/jiritobolka/gd-user-management.git ./
 RUN git checkout master
 
-ENTRYPOINT ruby ./main.rb
+ENTRYPOINT ruby ./main.rb -d data
