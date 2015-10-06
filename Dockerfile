@@ -1,8 +1,8 @@
 # VERSION 1.0
 FROM bizztreat/docker-ruby-keboola
-MAINTAINER Jiri Tobolka (jiri.tobolka@bizztreat.com)
+MAINTAINER Jiri Tobolka <jiri.tobolka@bizztreat.com>
 
-WORKDIR /
+WORKDIR /home
 
 # Initialize 
 RUN git clone https://github.com/jiritobolka/gd-user-management.git ./
