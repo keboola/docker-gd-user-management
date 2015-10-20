@@ -4,8 +4,9 @@ MAINTAINER Jiri Tobolka <jiri.tobolka@bizztreat.com>
 
 WORKDIR /home
 
-# Initialize 
+# Initialize
+RUN gem install rest_client 
 RUN git clone https://github.com/jiritobolka/gd-user-management.git ./
 RUN git checkout master
 
-ENTRYPOINT ruby ./main.rb -d ./data
+ENTRYPOINT ruby ./main.rb -d /data
