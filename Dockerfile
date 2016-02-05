@@ -6,7 +6,8 @@ WORKDIR /home
 
 # Initialize
 RUN gem install rest_client
-RUN gem install gooddata
+RUN sudo gem install gooddata
+
 RUN git clone https://github.com/jiritobolka/gd-user-management.git ./
 RUN git checkout master
 
