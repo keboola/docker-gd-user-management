@@ -7,7 +7,7 @@ WORKDIR /home
 # Initialize
 # RUN gem install rest_client
 
-RUN git clone https://github.com/jiritobolka/gd-user-management.git ./
+RUN git clone https://github.com/keboola/gd-user-management.git ./
 RUN git checkout master
 
 ENTRYPOINT ruby ./main.rb -d /data
